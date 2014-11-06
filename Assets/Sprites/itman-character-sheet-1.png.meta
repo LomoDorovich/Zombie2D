@@ -3,6 +3,7 @@ guid: 2a4891f73c2238c4487dd4d815a8724d
 TextureImporter:
   fileIDToRecycleName:
     21300000: itman-character-sheet-1
+    21300002: itman-character-sheet-1_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,9 +27,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -43,6 +44,16 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: itman-character-sheet-1_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 42
+        width: 102
+        height: 255
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
