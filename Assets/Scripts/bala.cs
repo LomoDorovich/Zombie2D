@@ -15,16 +15,18 @@ public class bala : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter2D(Collision2D target){
-				Destroy (gameObject);
-				//onDestroy();
+			
+				onDestroy();
 		}
 
 
 
 	void onDestroy(){
-	     var clone = Instantiate(particulas,transform.position,Quaternion.identity)
-			as GameObject;
-		Destroy(clone,1);
-		Destroy(GameObject);
+		if (particulas != null) {
+						var clone = Instantiate (particulas, transform.position, Quaternion.identity)as GameObject;
+			Destroy(clone,1);
+		}
+
+
 	}
 }
