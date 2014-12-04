@@ -9,13 +9,13 @@ public class nextlevel : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D target) {
 		if (target.transform.tag == "Player") {
-			Application.LoadLevel (nombreNivel);
+			if (!cargando){
+				StartCoroutine (cargaNivel ());
 	// Use this for initialization
 		}
 	}
-	void OnTriggerEnter2D(Collider2D target){
-				cargando = true;
-		}
+	}
+
 	void OnTriggerExit2D(Collider2D target){
 				cargando = false;
 
